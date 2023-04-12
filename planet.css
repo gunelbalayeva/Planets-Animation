@@ -1,0 +1,57 @@
+body {
+  height:500 px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image:url(./uzay-karanligi-gelgez-700x420.jpg);
+}
+
+.space {
+  background: url() no-repeat;
+  background-size: cover;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(GUNES.jpeg);
+  background-size: cover;
+  animation: planet 10s linear infinite;
+}
+.earth {
+  position: absolute;
+  right: 100%;
+  top: -70%;
+  width: 150px;
+  height: 150px;
+  background-image: url(yer.jpeg);
+  border-radius: 50%;
+  background-size: cover;
+  transform-origin: left;
+  animation: planet 10s linear infinite;
+}
+.moon {
+  position: absolute;
+  right: 50%;
+  top: -30%;
+  width: 50px;
+  height: 50px;
+  background-image: url(../css/ay.jpeg);
+  border-radius: 50%;
+  background-size: cover;
+  transform-origin: left;
+  animation: planet 10s linear infinite;
+}
+
+@keyframes planet {
+  0% {
+    transform: rotate(1.3deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
